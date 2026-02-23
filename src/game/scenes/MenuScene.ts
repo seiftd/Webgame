@@ -73,6 +73,19 @@ export default class MenuScene extends Phaser.Scene {
       50,
       currencyText,
     );
+
+    this.add
+      .text(
+        width / 2,
+        height - 50,
+        "WASD/Joystick to Move | SPACE to Dash | Auto-Attack",
+        {
+          fontSize: "16px",
+          color: "#888888",
+          fontFamily: "monospace",
+        },
+      )
+      .setOrigin(0.5);
   }
 
   createUpgradeButton(
